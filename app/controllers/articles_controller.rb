@@ -8,10 +8,14 @@ def index
 end
 
 def show
+	@comment = Comment.new	
+	@comment.article_id = @article.id
+
 end
 
 def new
 	@article = Article.new
+	
 end
 
 def create
